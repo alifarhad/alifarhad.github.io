@@ -46,7 +46,7 @@ $("li").click(function() {
     $(this).addClass("active");
   });
 
-$('#container').imagesLoaded( function() {
+$('.parallax-container').imagesLoaded( function() {
   $("body").addClass("loaded");
 });
 
