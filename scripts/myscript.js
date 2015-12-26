@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+$('.parallax').imagesLoaded( function() {
+  $("body").addClass("loaded");
+});
+
 
 
  $(function(){
@@ -46,9 +50,6 @@ $("li").click(function() {
     $(this).addClass("active");
   });
 
-$('.parallax-container').imagesLoaded( function() {
-  $("body").addClass("loaded");
-});
 
 
 
