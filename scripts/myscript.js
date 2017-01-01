@@ -2,6 +2,19 @@ $(document).ready(function() {
 
 $('.parallax').imagesLoaded( function() {
   $("body").addClass("loaded");
+ 
+ 
+var how = $(function(){
+      $(".element, .text").typed({
+        strings: ["I'm a feelancer, coder and IT enthusiast. I like to code stuff that's both fun and makes life easier. I'm focused on front-end development for now, but my heart lies in backend development."],
+        typeSpeed: 0,
+        showCursor: false
+      });
+  });
+
+})
+.done(function() {
+how();
 });
 
 
@@ -22,13 +35,7 @@ $('.parallax').imagesLoaded( function() {
 
 });
 
-$(function(){
-      $(".element, .text").typed({
-        strings: ["I'm a feelancer, coder and IT enthusiast. I like to code stuff that's both fun and makes life easier. I'm focused on front-end development for now, but my heart lies in backend development."],
-        typeSpeed: 0,
-        showCursor: false
-      });
-  });
+
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
